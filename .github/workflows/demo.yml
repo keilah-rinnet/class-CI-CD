@@ -1,0 +1,15 @@
+#name of the workflow
+name: hello wolrd
+
+#this an event trigger
+on:
+  push:
+    branches: [main]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello 
+        run: echo "hello world" 
+
